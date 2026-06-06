@@ -2,6 +2,7 @@ import Handlebars from 'handlebars';
 
 export function registerHelpers(): void {
   Handlebars.registerHelper('kebabCase', (str: string) => {
+    if (!str) return '';
     return str
       .replace(/([a-z])([A-Z])/g, '$1-$2')
       .replace(/[\s_]+/g, '-')
@@ -9,12 +10,14 @@ export function registerHelpers(): void {
   });
 
   Handlebars.registerHelper('pascalCase', (str: string) => {
+    if (!str) return '';
     return str
       .replace(/(^|[-_\s])(\w)/g, (_match, _sep, char) => char.toUpperCase())
       .replace(/[-_\s]/g, '');
   });
 
   Handlebars.registerHelper('camelCase', (str: string) => {
+    if (!str) return '';
     const pascal = str
       .replace(/(^|[-_\s])(\w)/g, (_match: string, _sep: string, char: string) => char.toUpperCase())
       .replace(/[-_\s]/g, '');
@@ -26,6 +29,7 @@ export function registerHelpers(): void {
   });
 
   Handlebars.registerHelper('zodType', (param: { type: string }) => {
+    if (!param) return 'string';
     const typeMap: Record<string, string> = {
       string: 'string',
       number: 'number',

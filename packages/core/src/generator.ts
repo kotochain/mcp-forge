@@ -60,6 +60,9 @@ export async function generateProject(options: GenerateProjectOptions): Promise<
 
   // Generate config file
   await generateConfigFile(outputPath, projectName, description);
+
+  // Generate tsup config
+  await generateTsupConfig(outputPath);
 }
 
 async function resolveTemplateDir(templateName: string): Promise<string> {
@@ -192,4 +195,19 @@ export default defineConfig({
 
   const configPath = join(outputPath, 'mcp-forge.config.ts');
   await writeFile(configPath, configContent, 'utf-8');
+}
+
+async function generateTsupConfig(outputPath: string): Promise<void> {
+  const tsupContent = `import { defineConfig } from 'tsup';
+
+export default defineConfig({
+  entry: ['src/index.ts'],
+  format: ['esm'],
+  clean: true,
+  sourcemap: true,
+});
+`;
+
+  const tsupPath = join(outputPath, 'tsup.config.ts');
+  await writeFile(tsupPath, tsupContent, 'utf-8');
 }
