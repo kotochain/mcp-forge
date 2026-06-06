@@ -1,0 +1,5 @@
+{
+  "name": "minimal",
+  "description": "A minimal MCP server with a single echo tool",
+  "category": "minimal"
+}

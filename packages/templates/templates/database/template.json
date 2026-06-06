@@ -1,0 +1,5 @@
+{
+  "name": "database",
+  "description": "MCP server for database operations (query, insert, update, delete)",
+  "category": "data"
+}

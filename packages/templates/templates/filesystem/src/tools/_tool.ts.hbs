@@ -1,0 +1,19 @@
+import { z } from 'zod/v3';
+
+export function register{{pascalCase name}}(server: import('@modelcontextprotocol/sdk/server/mcp.js').McpServer, allowedDirs: string[]) {
+  server.tool(
+    '{{name}}',
+    '{{description}}',
+    {
+      {{#each parameters.properties}}
+      {{@key}}: z.{{zodType this}}(){{#if this.description}}.describe('{{this.description}}'){{/if}},
+      {{/each}}
+    },
+    async ({ {{parameterList}} }) => {
+      // TODO: Implement {{name}} file system operation
+      return {
+        content: [{ type: 'text', text: '{{name}} executed' }],
+      };
+    }
+  );
+}

@@ -1,0 +1,5 @@
+{
+  "name": "rest-api",
+  "description": "MCP server that wraps a REST API with tool calls",
+  "category": "api"
+}

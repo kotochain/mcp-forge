@@ -1,0 +1,5 @@
+{
+  "name": "filesystem",
+  "description": "MCP server for file system operations (read, write, list, search)",
+  "category": "data"
+}

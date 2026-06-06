@@ -1,0 +1,5 @@
+{
+  "name": "ai-tool",
+  "description": "MCP server that wraps AI/LLM API calls as tools",
+  "category": "ai"
+}

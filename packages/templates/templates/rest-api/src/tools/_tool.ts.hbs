@@ -1,0 +1,26 @@
+import { z } from 'zod/v3';
+
+export function register{{pascalCase name}}(server: import('@modelcontextprotocol/sdk/server/mcp.js').McpServer) {
+  server.tool(
+    '{{name}}',
+    '{{description}}',
+    {
+      {{#each parameters.properties}}
+      {{@key}}: z.{{zodType this}}(){{#if this.description}}.describe('{{this.description}}'){{/if}},
+      {{/each}}
+    },
+    async ({ {{parameterList}} }) => {
+      // TODO: Implement {{name}} - call your REST API here
+      const response = await fetch('https://api.example.com/{{name}}', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ {{parameterList}} }),
+      });
+
+      const data = await response.json();
+      return {
+        content: [{ type: 'text', text: JSON.stringify(data, null, 2) }],
+      };
+    }
+  );
+}

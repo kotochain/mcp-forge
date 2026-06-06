@@ -1,0 +1,28 @@
+# {{projectName}}
+
+{{description}}
+
+Built with [MCP Forge](https://github.com/user/mcp-forge).
+
+## Quick Start
+
+```bash
+npm install
+npm run build
+npm start
+```
+
+## Usage with Claude Desktop
+
+Add to `claude_desktop_config.json`:
+
+```json
+{
+  "mcpServers": {
+    "{{projectName}}": {
+      "command": "node",
+      "args": ["/path/to/{{projectName}}/dist/index.js"]
+    }
+  }
+}
+```
