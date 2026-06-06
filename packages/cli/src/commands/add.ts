@@ -3,8 +3,8 @@ import { runAddPrompts } from '../prompts/add-prompts.js';
 import pc from 'picocolors';
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import { join, dirname } from 'node:path';
-import { renderTemplate } from '@mcp-forge/core';
-import type { ToolDefinition } from '@mcp-forge/core';
+import { renderTemplate } from 'mcp-forge-core';
+import type { ToolDefinition } from 'mcp-forge-core';
 
 const TOOL_TEMPLATE = `import { z } from 'zod/v3';
 

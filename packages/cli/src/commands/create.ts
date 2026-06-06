@@ -1,5 +1,5 @@
 import { Command } from 'commander';
-import { generateProject } from '@mcp-forge/core';
+import { generateProject } from 'mcp-forge-core';
 import { runCreatePrompts } from '../prompts/create-prompts.js';
 import pc from 'picocolors';
 import { execa } from 'execa';

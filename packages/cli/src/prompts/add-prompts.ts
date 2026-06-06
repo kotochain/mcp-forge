@@ -1,5 +1,5 @@
 import * as clack from '@clack/prompts';
-import type { ToolDefinition } from '@mcp-forge/core';
+import type { ToolDefinition } from 'mcp-forge-core';
 
 export async function runAddPrompts(toolName?: string): Promise<ToolDefinition | null> {
   const answers = await clack.group({

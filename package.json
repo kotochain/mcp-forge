@@ -6,9 +6,9 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mcp-forge/mcp-forge.git"
+    "url": "https://github.com/kotochain/mcp-forge.git"
   },
-  "homepage": "https://github.com/mcp-forge/mcp-forge",
+  "homepage": "https://github.com/kotochain/mcp-forge",
   "scripts": {
     "build": "pnpm -r run build",
     "test": "pnpm -r run test",

@@ -1,6 +1,6 @@
 import * as clack from '@clack/prompts';
-import type { ToolDefinition } from '@mcp-forge/core';
-import { listTemplates } from '@mcp-forge/templates';
+import type { ToolDefinition } from 'mcp-forge-core';
+import { listTemplates } from 'mcp-forge-templates';
 
 export interface CreateAnswers {
   projectName: string;

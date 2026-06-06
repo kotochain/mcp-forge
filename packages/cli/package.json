@@ -1,5 +1,5 @@
 {
-  "name": "@mcp-forge/cli",
+  "name": "mcp-forge",
   "version": "0.1.0",
   "type": "module",
   "bin": {
@@ -9,10 +9,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mcp-forge/mcp-forge.git",
+    "url": "https://github.com/kotochain/mcp-forge.git",
     "directory": "packages/cli"
   },
-  "homepage": "https://github.com/mcp-forge/mcp-forge",
+  "homepage": "https://github.com/kotochain/mcp-forge",
   "keywords": ["mcp", "model-context-protocol", "mcp-server", "cli", "scaffold", "generator", "developer-tools"],
   "scripts": {
     "build": "tsup",
@@ -21,8 +21,8 @@
     "lint": "tsc --noEmit"
   },
   "dependencies": {
-    "@mcp-forge/core": "workspace:*",
-    "@mcp-forge/templates": "workspace:*",
+    "mcp-forge-core": "workspace:*",
+    "mcp-forge-templates": "workspace:*",
     "@modelcontextprotocol/sdk": "^1.29.0",
     "commander": "^12.0.0",
     "picocolors": "^1.1.0",

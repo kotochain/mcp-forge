@@ -177,7 +177,7 @@ async function generateConfigFile(
   projectName: string,
   description: string
 ): Promise<void> {
-  const configContent = `import { defineConfig } from '@mcp-forge/core';
+  const configContent = `import { defineConfig } from 'mcp-forge-core';
 
 export default defineConfig({
   server: {

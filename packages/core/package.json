@@ -1,5 +1,5 @@
 {
-  "name": "@mcp-forge/core",
+  "name": "mcp-forge-core",
   "version": "0.1.0",
   "type": "module",
   "main": "./dist/index.js",
@@ -8,10 +8,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mcp-forge/mcp-forge.git",
+    "url": "https://github.com/kotochain/mcp-forge.git",
     "directory": "packages/core"
   },
-  "homepage": "https://github.com/mcp-forge/mcp-forge",
+  "homepage": "https://github.com/kotochain/mcp-forge",
   "keywords": ["mcp", "model-context-protocol", "mcp-server", "scaffold", "generator"],
   "scripts": {
     "build": "tsup",
