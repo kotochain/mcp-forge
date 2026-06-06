@@ -4,6 +4,15 @@
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
+  "description": "Built-in templates for MCP Forge - 6 production-ready MCP server templates",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mcp-forge/mcp-forge.git",
+    "directory": "packages/templates"
+  },
+  "homepage": "https://github.com/mcp-forge/mcp-forge",
+  "keywords": ["mcp", "model-context-protocol", "mcp-server", "templates", "scaffold"],
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch",

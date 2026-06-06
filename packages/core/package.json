@@ -4,6 +4,15 @@
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
+  "description": "Core library for MCP Forge - schema validation, config loading, template engine, and project generator",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mcp-forge/mcp-forge.git",
+    "directory": "packages/core"
+  },
+  "homepage": "https://github.com/mcp-forge/mcp-forge",
+  "keywords": ["mcp", "model-context-protocol", "mcp-server", "scaffold", "generator"],
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch",

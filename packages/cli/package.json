@@ -5,6 +5,15 @@
   "bin": {
     "mcp-forge": "./dist/index.js"
   },
+  "description": "The fastest way to build MCP Servers - CLI tool for scaffolding, developing, and inspecting MCP servers",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mcp-forge/mcp-forge.git",
+    "directory": "packages/cli"
+  },
+  "homepage": "https://github.com/mcp-forge/mcp-forge",
+  "keywords": ["mcp", "model-context-protocol", "mcp-server", "cli", "scaffold", "generator", "developer-tools"],
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch",

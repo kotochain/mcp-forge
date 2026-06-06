@@ -3,6 +3,12 @@
   "version": "0.0.0",
   "private": true,
   "description": "The fastest way to build MCP Servers",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mcp-forge/mcp-forge.git"
+  },
+  "homepage": "https://github.com/mcp-forge/mcp-forge",
   "scripts": {
     "build": "pnpm -r run build",
     "test": "pnpm -r run test",
